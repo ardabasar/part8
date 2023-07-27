@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slick Slider ile Sabit Arka Plan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .Aktiviteler {
+      position: relative;
+      height: 100vh;
+      background-image: url("/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png"); /* Arka plan resmini buraya ekleyin */
+      background-size: cover;
+    }
+
+    .Aktiviteler::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Siyahlık rengini buradan ayarlayabilirsiniz */
+    }
+
+    .slider {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 900px;
+    }
+
+    .slide {
+      background-color: rgba(255, 255, 255, 0.8); /* Kayan kutunun arka plan rengini buradan ayarlayabilirsiniz */
+
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Kayan kutunun gölgesini buradan ayarlayabilirsiniz */
+    }
+
+    .slide img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      text-align: left;
+     
+      padding: 2rem;
+    }
+
+    .content h1 {
+      font-size: 24px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="Aktiviteler">
+    <div class="slider">
+      <div class="slide">
+        <div class="image">
+          <img src="/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="Resim Açıklaması">
+        </div>
+        <div class="content">
+            <span>20.06.2023</span>
+          <h1>Lorem Ipsum Etkinliği</h1>
+          <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe
+            kullanılan taklit yazı bloğu olarak tanımlanır.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image">
+          <img src="/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="Resim Açıklaması">
+        </div>
+        <div class="content">
+            <span>20.06.2023</span>
+          <h1>Lorem Ipsum Etkinliği</h1>
+          <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe
+            kullanılan taklit yazı bloğu olarak tanımlanır.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image">
+          <img src="/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="Resim Açıklaması">
+        </div>
+        <div class="content">
+            <span>20.06.2023</span>
+          <h1>Lorem Ipsum Etkinliği</h1>
+          <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe
+            kullanılan taklit yazı bloğu olarak tanımlanır.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image">
+          <img src="/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="Resim Açıklaması">
+        </div>
+        <div class="content">
+            <span>20.06.2023</span>
+          <h1>Lorem Ipsum Etkinliği</h1>
+          <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe
+            kullanılan taklit yazı bloğu olarak tanımlanır.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image">
+          <img src="/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="Resim Açıklaması">
+        </div>
+        <div class="content">
+            <span>20.06.2023</span>
+          <h1>Lorem Ipsum Etkinliği</h1>
+          <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe
+            kullanılan taklit yazı bloğu olarak tanımlanır.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="image">
+          <img src="/river-surrounded-by-forests-cloudy-sky-thuringia-germany.png" alt="Resim Açıklaması">
+        </div>
+        <div class="content">
+            <span>20.06.2023</span>
+          <h1>Lorem Ipsum Etkinliği</h1>
+          <p>Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve basın yayın sektöründe
+            kullanılan taklit yazı bloğu olarak tanımlanır.</p>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+   $('.slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 2000,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+  </script>
+</body>
+</html>

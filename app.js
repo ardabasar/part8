@@ -66,3 +66,63 @@
 
 })();
 
+
+AOS.init();
+
+let y = 0;
+
+setInterval(() => {
+  console.log(y)
+  if (y <= 224) {
+    y++
+  }
+}, 10);
+
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+   let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+     current += increment;
+     obj.textContent = current;
+     if (current == end) {
+      clearInterval(timer);
+     }
+    }, step);
+  }
+  counter("count1", 0, 100, 3500);
+  counter("count2", 100, 500, 3500);
+  counter("count3", 0, 70, 3500);
+  counter("count4", 0, 224, 3500);
+ });
+ 
+ 
+ $('.slider').slick({
+  centerMode: true,
+  centerPadding: '0px',
+  slidesToShow: 1,
+  responsive: [
+    {
+      breakpoint: 2000,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+		

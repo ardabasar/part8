@@ -10,7 +10,10 @@
    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="main.css">
   <title>Dr. Mustafa Oral Öncül</title>
 </head>
 <body>
@@ -66,7 +69,7 @@
 
  <section id="sayfa1">
    <section class="s1">
-      <div class="s1-ic">
+      <div class="s1-ic" data-aos="fade-down">
          <div>
             <p class="text-1">Lorem Ipsum</p>
          </div>
@@ -97,7 +100,7 @@
       <section class="s2-ic">
          <div class="daire-divs">
             <div class="daire1-div">
-               <div class="daire-1">
+               <div class="daire-1" data-aos="fade-right" data-aos-duration="1000">
                   <div>
                      <p class="daire-text">Aldığı Ödüller</p>
                   </div>
@@ -109,7 +112,7 @@
                </div>
             </div>
             <div class="daire3-div">
-               <div class="daire-3">
+               <div class="daire-3" data-aos="fade-right" data-aos-duration="1500">
                   <div>
                      <p class="daire-text">Bulunduğu <br> Görevler</p>
                   </div>
@@ -121,7 +124,7 @@
                </div>
             </div>
             <div class="daire5-div">
-               <div class="daire-5">
+               <div class="daire-5" data-aos="fade-right" data-aos-duration="1500">
                   <div>
                      <p class="daire-text">Eğitim</p>
                   </div>
@@ -134,11 +137,11 @@
             </div>
          </div>
          <div>
-            <img class="doktor" src="img/doktor-adam.png" alt="">
+            <img class="doktor" data-aos="fade-up" src="img/doktor-adam.png" alt="">
          </div>
          <div class="daire-divs">
             <div class="daire2-div">
-               <div class="daire-2">
+               <div class="daire-2" data-aos="fade-left" data-aos-duration="1000">
                   <div>
                      <p class="daire-text">Lisanslar ve <br> Sertifikalar</p>
                   </div>
@@ -150,7 +153,7 @@
                </div>
             </div>
             <div class="daire4-div">
-               <div class="daire-4">
+               <div class="daire-4" data-aos="fade-left" data-aos-duration="1500">
                   <div>
                      <p class="daire-text">Üye Olduğu <br> Dernekler</p>
                   </div>
@@ -162,7 +165,7 @@
                </div>
             </div>
             <div class="daire6-div">
-               <div class="daire-6">
+               <div class="daire-6" data-aos="fade-left" data-aos-duration="1500">
                   <div>
                      <p class="daire-text">Yöneticilikleri</p>
                   </div>
@@ -181,23 +184,35 @@
  </section>
  <section id="#sayfa3" class="s3">
       <div class="s3-ic">
-         <div>
-            <p class="s3-text1">100<strong class="arti">+</strong></p>
+         <div data-aos="fade-right">
+               <div class="sayac-div">
+                  <span id="count1" class="s3-text1"></span><strong class="arti">+</strong></p>
+               </div>
+            <!-- <p class="s3-text1">100<strong class="arti">+</strong></p> -->
             <p class="s3-text2">Lorem, ipsum.</p>
             <p class="s3-text3">Lorem ipsum dolor sit amet consectetur.</p>
          </div>
-         <div>
-            <p class="s3-text1">500<strong class="arti">+</strong></p>
+         <div data-aos="fade-right">
+            <div class="sayac-div">
+               <span id="count2" class="s3-text1"></span><strong class="arti">+</strong></p>
+            </div>
+            <!-- <p class="s3-text1">500<strong class="arti">+</strong></p> -->
             <p class="s3-text2">Lorem, ipsum.</p>
             <p class="s3-text3">Lorem ipsum dolor sit amet consectetur.</p>
          </div>
-         <div>
-            <p class="s3-text1">70<strong class="arti">+</strong></p>
+         <div data-aos="fade-left">
+            <div class="sayac-div">
+               <span id="count3" class="s3-text1"></span><strong class="arti">+</strong></p>
+            </div>
+            <!-- <p class="s3-text1">70<strong class="arti">+</strong></p> -->
             <p class="s3-text2">Lorem, ipsum.</p>
             <p class="s3-text3">Lorem ipsum dolor sit amet consectetur.</p>
          </div>
-         <div>
-            <p class="s3-text1">224<strong class="arti">+</strong></p>
+         <div data-aos="fade-left">
+            <div class="sayac-div">
+               <span id="count4" class="s3-text1"></span><strong class="arti">+</strong></p>
+            </div>
+            <!-- <p class="s3-text1">224<strong class="arti">+</strong></p> -->
             <p class="s3-text2">Lorem, ipsum.</p>
             <p class="s3-text3">Lorem ipsum dolor sit amet consectetur.</p>
          </div>
@@ -210,25 +225,274 @@
          <div class="cerceve-1">
             <img class="s4-img1" src="img/atesOlcer.png" alt="">
             <p class="s4-tarihText">24.04.2023</p>
-            <p class="s4-text1">İstanbul Tıp Fakültesi Hastanesi'nde hastalar böyle tedavi ediliyor</p> 
+            <a href="#"><p class="s4-text1">İstanbul Tıp Fakültesi Hastanesi'nde hastalar böyle tedavi ediliyor</p> </a>
             <p class="s4-devamText"><a href="#">Devamını Oku<i class="fa-solid fa-angle-right fa-1x"></i></a></p>
          </div>
          <div class="kisim2-div">
             <div class="cerceve-2">
                <img src="img/6kisi.png" alt="">
                <p class="cerceve2-tarih">24.04.2023</p>
-               <p class="cerceve2-text">Yöneticisi Doç Dr. Leyla Türker Şener’i İstanbul İşletme’mizde ağırladık.</p>
+               <a href="#"><p class="cerceve2-text">Yöneticisi Doç Dr. Leyla Türker Şener’i İstanbul İşletme’mizde ağırladık.</p></a>
             </div>
             <div class="cerceve-2">
                <img src="img/insanlar.png" alt="">
                <p class="cerceve2-tarih">24.04.2023</p>
-               <p class="cerceve2-text">Yöneticisi Doç Dr. Leyla Türker Şener’i İstanbul İşletme’mizde ağırladık.</p>
+               <a href="#"><p class="cerceve2-text">Yöneticisi Doç Dr. Leyla Türker Şener’i İstanbul İşletme’mizde ağırladık.</p></a>
             </div>
             </div>
          </div>
    </div>
  </section>
- 
+ <section class="s5" id="sayfa5">
+   <section class="s5-ic">
+      <div class="s5-textDiv" data-aos="fade-right">
+         <p class="s5-text1">Dr.Mustafa Oral Öncül’e
+          <br> Sorun Yanıtlasın</p>
+         <p class="s5-text2">Lorem Ipsum, kısaca Lipsum, masaüstü yayıncılık ve
+            basın yayın sektöründe kullanılan taklit yazı bloğu
+            olarak tanımlanır.</p>
+         <button class="button-2">
+            <a href="#"><p>Detaylı Bilgi</p></a>
+         </button>
+      </div>
+      <div class="s5DoktorDiv" data-aos="fade-up">
+         <img class="s5-doktor" src="img/doktorGroup.png" alt="">
+      </div>
+   </section>
+   <div class="box-4"></div>
+   <img class="s5-img" src="img/3.resim.png" alt="">
+ </section>
+
+ <h1 class="s6-baslik">Çalışma Alanları</h1>
+ <section id="sayfa6">
+   <div class="s6-ic">
+      <div data-aos="fade-right">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-up">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-down">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-left">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-right">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-up">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-down">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+      <div data-aos="fade-left">
+         <img src="img/kresim1.png" alt="">
+         <p class="s6-altText">Lorem, ipsum.</p>
+      </div>
+   </div>
+ </section>
+ <section id="sayfa7">
+   <div class="s7-ic">
+      <div class="sozDiv" data-aos="zoom-in" data-aos-duration="1500">
+         <div class="tirnak-1">
+            <i class="fa-solid fa-quote-left"></i>
+         </div>
+         <p class="ozluSoz">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores vel tempora, minus maxime vero laborum ullam voluptatem natus non explicabo.</p>
+         <div class="tirnak-2">
+            <i class="fa-solid fa-quote-right"></i>
+         </div>
+      </div>
+   </div>
+   <div class="box-5"></div>
+   <img class="s7-img" src="img/yarimManzara.png" alt="">
+ </section>
+ <section id="sayfa8">
+   <p class="s8-baslik">Yararlı Bilgiler</p>
+   <div class="s8-ic">
+      <div class="s8-div1" data-aos="zoom-in">
+         <img src="img/yararliManzara.png" alt="">
+         <p class="s8-tarih">17.07.2023</p>
+         <a href="#"><p class="yararliBilgi">Lorem ipsum dolor sit amet.</p></a>
+         <p class="s8-icerik">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, iste. Voluptate sapiente veritatis reiciendis fuga maxime!</p>
+         <button class="s8-btn">
+            <a href="#"><p>Detaylı Bilgi</p></a>
+         </button>
+      </div>
+      <div class="s8-2Div" data-aos="zoom-in">
+         <div class="s8-kDiv">
+            <img src="img/kucukManzara1.png" alt="">
+            <div>
+               <p class="s8-tarih">17.07.2023</p>
+               <p class="s8-kText">Lorem ipsum dolor sit amet.</p>
+               <button class="s8-kBtn"><a href="#">
+                  <p>
+                     Detaylı Bilgi
+                  </p>
+               </a></button>
+            </div>
+         </div>
+         <div class="s8-kDiv">
+            <img src="img/kucukManzara2.png" alt="">
+            <div>
+               <p class="s8-tarih">17.07.2023</p>
+               <p class="s8-kText">Lorem ipsum dolor sit amet.</p>
+               <button class="s8-kBtn"><a href="#">
+                  <p>
+                     Detaylı Bilgi
+                  </p>
+               </a></button>
+            </div>
+         </div>
+      </div>
+   </div>
+ </section>
+ <section id="sayfa9">
+   <div class="s9-ic">
+      <div class="s9-icDiv">
+         <img class="s9-okulResim" src="img/okulResim.png" alt="">
+      </div>
+   </div>
+   <div class="box-6"></div>
+   <img class="s9-img" src="img/aktiviteResim.png" alt="">
+ </section>
+
+ <p class="s9-baslik">Video Galeri</p>
+ <section id="sayfa10">
+   <div class="s10-ic">
+      <div class="s10-div1">
+         <video controls class="s10-video" data-aos="fade-right">
+            <source src="video1.mp4" type="">
+         </video>
+         <div class="s10-vFoto">
+            <img data-aos="fade-right" class="s10-foto1" src="img/s10.png" alt="">
+            <img data-aos="fade-up" class="s10-foto1" src="img/s10.png" alt="">
+         </div>
+      </div>
+      <div class="s10-div2">
+         <img data-aos="fade-down" class="s10-foto2 s10-fotoPadding" src="img/s10.png" alt="">
+         <img data-aos="fade-left" class="s10-foto2" src="img/s10.png" alt="">
+      </div>
+   </div>
+ </section>
+
+ <section>
+   <h1 class="uyeKuruluslar">Üye Olduğu Kuruluşlar</h1>
+   <div class="scrolling_text">
+       <div class="text">
+           <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+           <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+           <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+           <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+       </div>
+       <div class="text">
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+       </div>
+       <div class="text">
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+         <span><a href="#">Lorem, ipsum. Kuruluş</a></span>
+       </div>
+   </div>
+</section>
+<footer id="sayfa12">
+   <div class="s12-ic">
+      <div class="f-div1">
+         <div>
+            <p class="f1-textB">Dr. Mustafa Oral Öncül</p>
+         </div>
+         <div class="d1-text">
+            Lorem Ipsum, kısaca Lipsum, masaüstü
+            yayıncılık ve basın yayın sektöründe kullanılan
+            taklit yazı bloğu olarak tanımlanır. Lipsum,
+            oluşturulacak şablon ve taslaklarda içerik
+            yerine geçerek yazı bloğunu doldurmak
+            için kullanılır.
+         </div>
+         <div class="icon-div">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+         </div>
+      </div>
+      <div>
+         <div>
+            <p class="f2-textB">Sayfalar</p>
+         </div>
+         <div class="f2-sDiv">
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+         </div>
+         <div>
+            <p class="f2-textB">Lorem, ipsum.</p>
+         </div>
+         <div class="f2-sDiv2">
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+         </div>
+      </div>
+      <div>
+         <div>
+            <p class="f2-textB">Lorem, ipsum.</p>
+         </div>
+         <div class="f2-sDiv2">
+            <a href="#"><p>Anasayfa</p></a>
+            <a href="#"><p>Anasayfa</p></a>
+         </div>
+      </div>
+      <div>
+         <div>
+            <p class="f2-textB">Bize Ulaşın</p>
+         </div>
+         <div>
+            <div class="communication">
+               <i class="fa-solid fa-phone"></i> <div><p>+90 226 5422020/3653</p></div>
+            </div>
+            <div class="communication2">
+               <i class="fa-solid fa-fax"></i> <div><p>+90 212 347 21 14</p></div>
+            </div>
+            <div class="communication2">
+               <i class="fa-solid fa-envelope"></i> <div><p>oraloncul@istanbul.edu.tr</p></div>
+            </div>
+            <div class="communication2">
+               <i class="fa-solid fa-location-dot"></i> <div><p class="adres-Text">İstanbul Üniversitesi Istanbul Tıp Fakültesi
+                  Profesör İnfeksiyon Hastalıkları ve Klinik
+                  Mikrobiyoloji ABD Çapa, Istanbul, Turkey</p></div>
+            </div>
+            <div class="communication2">
+               <i class="fa-solid fa-location-dot"></i> <div><p class="adres-Text">Goztepe Mah. Tutuncu Mehmet Efendi Cad.
+                  Ihlamur Sok.  Akan 2 Apt. No:18 Daire:38, 34600
+                  Kadıkoy - İstanbul, Turkey
+                  </p></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class="altCizgi">
+   <div class="ac-ic">
+      <p class="f-Name">Dr. Mustafa Oral Öncül</p>
+      <p class="lisans-Text">Tüm Hakları Saklıdır @2023</p>
+   </div>
+</div>
  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
